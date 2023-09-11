@@ -9,7 +9,6 @@
 }
 body {
   font-family: "Roboto", sans-serif;
-
 }
 .container {
   display: grid;
@@ -67,6 +66,9 @@ body {
   text-decoration: none;
 }
 
+.sidebar__img {
+  width: 200px;
+}
 @media (max-width: 600px) {
   .navbar__menu {
     display: flex;
