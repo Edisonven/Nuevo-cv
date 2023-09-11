@@ -1,7 +1,7 @@
 :root {
   --menu: scale(1);
   --close: scale(0);
-  --color-bg: #122e66;
+  --color-nav: #192ea8;
 }
 * {
   margin: 0;
@@ -9,7 +9,7 @@
 }
 body {
   font-family: "Roboto", sans-serif;
-  background-color: var(--color-bg);
+
 }
 .container {
   display: grid;
@@ -25,6 +25,7 @@ body {
   padding: 1rem;
   justify-content: space-between;
   overflow: hidden;
+  background-color: var(--color-nav);
 }
 .navbar__title {
   grid-area: title;
@@ -62,7 +63,7 @@ body {
 }
 .navbar__link {
   display: flex;
-  color: var(--color-bg);
+  color: white;
   text-decoration: none;
 }
 
@@ -84,13 +85,14 @@ body {
 
   .navbar__menu:target {
     clip-path: circle(100% at top right);
-    background-color: aqua;
+    background-color: var(--color-nav);
     opacity: 90%;
   }
 }
 @media (min-width: 600px) {
   .navbar__link--bars,
-  .navbar__menu {
+  .navbar__menu,
+  .navbar__link--xmark {
     display: none;
   }
 }
