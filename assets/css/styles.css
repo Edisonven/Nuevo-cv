@@ -1,7 +1,8 @@
 :root {
   --menu: scale(1);
   --close: scale(0);
-  --color-nav: #192ea8;
+  --nav-color: #192ea8;
+  --font-color: #fff;
 }
 * {
   margin: 0;
@@ -14,6 +15,7 @@ body {
   display: grid;
   grid-template-areas: "navbar navbar";
 }
+/*APARTADO NAVBAR*/
 .navbar {
   grid-area: navbar;
   display: grid;
@@ -24,7 +26,7 @@ body {
   padding: 1rem;
   justify-content: space-between;
   overflow: hidden;
-  background-color: var(--color-nav);
+  background-color: var(--nav-color)
 }
 .navbar__title {
   grid-area: title;
@@ -65,9 +67,24 @@ body {
   color: white;
   text-decoration: none;
 }
-
+/*APARTADO SIDEBAR*/
+.sidebar__container {
+  grid-area: sidebar;
+  display: flex;
+  flex-direction: column;
+}
 .sidebar__img {
   width: 200px;
+}
+.sidebar__title{
+  padding-top: 1.125rem;
+  padding-bottom: 1.125rem;
+  background-color: var(--nav-color);
+  color: var(--font-color);
+  width: 17.8125rem;
+  border-radius: 0 1.25rem 1.25rem 0;
+  margin-top: 2.5rem;
+  margin-bottom: 1.25rem;
 }
 @media (max-width: 600px) {
   .navbar__menu {
@@ -87,7 +104,7 @@ body {
 
   .navbar__menu:target {
     clip-path: circle(100% at top right);
-    background-color: var(--color-nav);
+    background-color: var(--nav-color);
     opacity: 90%;
   }
 }
