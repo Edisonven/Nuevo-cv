@@ -3,6 +3,9 @@
   --close: scale(0);
   --nav-color: #192ea8;
   --font-color: #fff;
+  --titles-font-size: 1.5rem;
+  --titles-font-weight: 900;
+  --p-font-size: 1.1rem;
 }
 * {
   margin: 0;
@@ -13,7 +16,9 @@ body {
 }
 .container {
   display: grid;
-  grid-template-areas: "navbar navbar";
+  grid-template-areas:
+    "navbar navbar"
+    "sidebar .";
 }
 /*APARTADO NAVBAR*/
 .navbar {
@@ -68,6 +73,10 @@ body {
   text-decoration: none;
 }
 /*APARTADO SIDEBAR*/
+.sidebar {
+  background-color: var(--nav-color);
+  width: 100%;
+}
 .sidebar__container {
   grid-area: sidebar;
   display: flex;
@@ -77,19 +86,21 @@ body {
 }
 .sidebar__img {
   width: 200px;
+  margin-top: 2rem;
 }
 .sidebar__title {
- padding: 1rem 2rem;
-  background-color: var(--nav-color);
-  color: var(--font-color);
-  width:max-content;
+  padding: 1rem 2rem;
+  background-color: var(--font-color);
+  color: var(--nav-color);
+  width: max-content;
   border-radius: 0 1.25rem 1.25rem 0;
   margin-top: 2.5rem;
   margin-bottom: 1.25rem;
-  font-size: 1.5rem;
+  font-size: var(--titles-font-size);
+  font-weight: var(--titles-font-weight);
 }
 .sidebar__icon {
-  color: var(--nav-color);
+  color: var(--font-color);
 }
 .sidebar__info {
   display: flex;
@@ -97,13 +108,21 @@ body {
   gap: 1rem;
   padding-bottom: 2rem;
   font-size: 1.5rem;
+  color: var(--font-color);
 }
-.sidebar__info__content{
-  font-size: 1.1rem;
+.sidebar__info__content {
+  font-size: var(--p-font-size);
   margin-bottom: 1.5rem;
   font-weight: 500;
+  color: var(--font-color);
 }
+/*RESPONSIVE DESIGN*/
 @media (max-width: 600px) {
+  .container {
+    grid-template-areas:
+      "navbar"
+      "sidebar";
+  }
   .navbar__menu {
     display: flex;
     flex-direction: column;
