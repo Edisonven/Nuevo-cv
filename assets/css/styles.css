@@ -203,7 +203,7 @@ body {
   }
   .navbar__menu:target {
     clip-path: circle(100% at top right);
-    background-color: #8278f0;
+    background-color: black;
     opacity: 90%;
   }
 }
