@@ -123,7 +123,7 @@ body {
   display: flex;
   align-items: center;
   gap: 1rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   font-size: 1.5rem;
   color: var(--font-color);
 }
@@ -184,7 +184,7 @@ body {
   display: flex;
   align-items: center;
   gap: 30px;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 .portafolio__title {
   font-size: var(--titles-font-size);
