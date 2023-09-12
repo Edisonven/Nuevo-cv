@@ -24,6 +24,7 @@ body {
   grid-template-areas:
     "navbar navbar"
     "sidebar main";
+    padding-bottom: 70px;
 }
 
 /*APARTADO NAVBAR*/
@@ -186,7 +187,8 @@ body {
   padding-top: 100px;
 }
 .portafolio__title {
-  font-size: var(--p-font-size);
+  font-size: var(--titles-font-size);
+  border-bottom: solid 2px black;
 }
 .portafolio__img {
   width: 50px;
