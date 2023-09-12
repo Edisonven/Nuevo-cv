@@ -36,7 +36,6 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  justify-content: space-between;
   overflow: hidden;
   background-color: var(--nav-color);
   margin-bottom: 3rem;
@@ -259,5 +258,6 @@ body {
   }
   .navbar__link--desktop:hover {
     opacity: 50%;
+    transition: .3s;
   }
 }
