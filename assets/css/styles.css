@@ -101,6 +101,7 @@ body {
   width: 250px;
   margin-bottom: 2rem;
   box-shadow: var(--shadow-botons);
+  border-radius: 30px;
 }
 .sidebar__title {
   padding: 1rem 2rem;
@@ -135,6 +136,7 @@ body {
 
 .main {
   background-color: var(--font-color);
+  border-radius: 30px;
 }
 .main__container {
   grid-area: main;
@@ -142,6 +144,7 @@ body {
   flex-direction: column;
   width: 90%;
   margin: 0 auto;
+  padding-top: 50px;
 }
 .main__title {
   color: var(--font-color);
@@ -175,6 +178,19 @@ body {
 .main__icon {
   color: var(--font-color);
 }
+/*PORTAFOLIO*/
+.portafolio {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-top: 100px;
+}
+.portafolio__title {
+  font-size: var(--p-font-size);
+}
+.portafolio__img {
+  width: 50px;
+}
 /*RESPONSIVE DESIGN*/
 @media (max-width: 600px) {
   .container {
@@ -205,18 +221,9 @@ body {
     background-color: black;
     opacity: 90%;
   }
-}
-/*PORTAFOLIO*/
-.portafolio {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
-.portafolio__title {
-  font-size: var(--p-font-size);
-}
-.portafolio__img {
-  width: 50px;
+  .portafolio {
+    padding: 20px 0;
+  }
 }
 @media (max-width: 440px) {
   .navbar__title {
@@ -238,6 +245,7 @@ body {
   body {
     width: 95%;
     margin: 0 auto;
+    min-width: 1100px;
   }
   .navbar__link--desktop {
     color: var(--nav-color);
