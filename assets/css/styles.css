@@ -191,6 +191,11 @@ body {
 }
 .portafolio__img {
   width: 50px;
+  transition: linear 0.3s;
+}
+.portafolio__img:hover {
+  transform: scale(1.2);
+ 
 }
 /*RESPONSIVE DESIGN*/
 @media (max-width: 600px) {
@@ -234,10 +239,7 @@ body {
     min-width: 370px;
   }
 }
-.portafolio__img:hover {
-  transform: scale(1.2);
-  transition: linear 0.3s;
-}
+
 @media (min-width: 600px) {
   .navbar__link--bars,
   .navbar__link--xmark {
