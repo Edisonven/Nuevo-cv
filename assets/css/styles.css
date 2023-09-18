@@ -24,7 +24,7 @@ body {
   grid-template-areas:
     "navbar navbar"
     "sidebar main";
-    padding-bottom: 70px;
+  padding-bottom: 70px;
 }
 
 /*APARTADO NAVBAR*/
@@ -254,10 +254,24 @@ body {
     padding: 0.8rem 2rem;
     border-radius: 30px;
     box-shadow: 5px 5px 8px black;
-    font-weight: var(--titles-font-weight)
+    font-weight: var(--titles-font-weight);
+    position: relative;
   }
-  .navbar__link--desktop:hover {
-    opacity: 50%;
-    transition: .3s;
+  .navbar__link--desktop::after {
+    content: "";
+    background-color: var(--nav-color);
+    position: absolute;
+    top: 75%;
+    width: 65%;
+    height: 5px;
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    transition: 0.3s;
+  }
+  .navbar__link--desktop:hover::after {
+    clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+  }
+  .navbar__link--desktop:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
   }
 }
