@@ -256,6 +256,7 @@ body {
     box-shadow: 5px 5px 8px black;
     font-weight: var(--titles-font-weight);
     position: relative;
+    transition: linear 0.2s;
   }
   .navbar__link--desktop::after {
     content: "";
@@ -272,6 +273,5 @@ body {
   }
   .navbar__link--desktop:hover{
     transform: scale(1.1);
-    transition: 0.5s;
   }
 }
