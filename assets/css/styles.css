@@ -219,6 +219,7 @@ body {
     padding-top: 100px;
     clip-path: circle(0% at top right);
     transition: linear 0.5s;
+    min-width: 400px;
   }
   .navbar__link {
     font-size: var(--titles-font-size);
@@ -236,11 +237,7 @@ body {
   .navbar__title {
     font-size: 2rem;
   }
-  body {
-    min-width: 370px;
-  }
 }
-
 @media (min-width: 600px) {
   .navbar__link--bars,
   .navbar__link--xmark {
