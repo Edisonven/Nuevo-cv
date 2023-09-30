@@ -192,7 +192,7 @@ body {
 }
 .portafolio__img {
   width: 50px;
-  transition: linear 0.3s;
+  transition: transform linear 0.3s;
 }
 .portafolio__img:hover {
   transform: scale(1.2);
@@ -218,16 +218,16 @@ body {
     min-height: 100vh;
     padding-top: 100px;
     clip-path: circle(0% at top right);
-    transition: all linear 0.5s;
+    transition: clip-path linear 0.5s;
     min-width: 400px;
+    background-color: black;
+    opacity: 90%;
   }
   .navbar__link {
     font-size: var(--titles-font-size);
   }
   .navbar__menu:target {
     clip-path: circle(100% at top right);
-    background-color: black;
-    opacity: 90%;
   }
   .portafolio {
     padding: 20px 0;
@@ -256,7 +256,7 @@ body {
     box-shadow: 5px 5px 8px black;
     font-weight: var(--titles-font-weight);
     position: relative;
-    transition: all linear 0.2s;
+    transition: transform linear 0.2s;
   }
   .navbar__link--desktop::after {
     content: "";
@@ -266,7 +266,7 @@ body {
     width: 65%;
     height: 5px;
     clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
-    transition: 0.3s;
+    transition: clip-path linear 0.3s;
   }
   .navbar__link--desktop:hover::after {
     clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
